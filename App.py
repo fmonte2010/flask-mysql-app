@@ -7,6 +7,7 @@ import os
 import uuid
 from werkzeug.utils import secure_filename
 #import firebase
+import pyrebase
 
 #local uploads or temp
 UPLOAD_FOLDER = "./uploads"
@@ -27,7 +28,23 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 mysql = MySQL(app)
 CORS(app)
 
+#firebase config
+config = {
+    "apiKey": "AIzaSyCyK9dY7nMdYD8lHDF0cAzhNcjCrNUvqVw",
+    "authDomain": "flask-posts-tuto.firebaseapp.com",
+    "projectId": "flask-posts-tuto",
+    "storageBucket": "flask-posts-tuto.appspot.com",
+    "messagingSenderId": "507753716588",
+    "appId": "1:507753716588:web:be9b7950fac20c578bf149",
+    "measurementId": "G-QBLZ2J4T80"
+    "serviceAccount": "./keyfile.json"    
+}
 
+#init firebase app
+firebase = pyrebase.initialize_app(config)
+
+#firebase storage
+storage = firebase.storage()
 
 @app.route("/api/posts", methods=["GET"])
 def index():
