@@ -36,7 +36,7 @@ config = {
     "storageBucket": "flask-posts-tuto.appspot.com",
     "messagingSenderId": "507753716588",
     "appId": "1:507753716588:web:be9b7950fac20c578bf149",
-    "measurementId": "G-QBLZ2J4T80"
+    "measurementId": "G-QBLZ2J4T80",
     "serviceAccount": "./keyfile.json"    
 }
 
