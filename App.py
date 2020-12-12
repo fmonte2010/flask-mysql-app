@@ -13,5 +13,5 @@ ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
 
 app = Flask(__name__)
 
-if __name__ == "__main__"
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
