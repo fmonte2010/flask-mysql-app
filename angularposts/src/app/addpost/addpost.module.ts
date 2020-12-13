@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { AddpostRoutingModule } from './addpost-routing.module';
-import { AddpostsComponent } from './addpost.component';
+import { AddpostComponent } from './addpost.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -11,6 +11,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     CommonModule
   ],
-  declarations: [AddpostsComponent]
+  declarations: [AddpostComponent]
 })
 export class AppModule { }

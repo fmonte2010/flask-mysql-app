@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-addposts',
-  templateUrl: './addposts.component.html',
-  styleUrls: ['./addposts.component.css']
+  templateUrl: './addpost.component.html',
+  styleUrls: ['./addpost.component.css']
 })
-export class AddpostsComponent implements OnInit {
+export class AddpostComponent implements OnInit {
 
   constructor() { }
 
