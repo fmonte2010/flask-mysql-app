@@ -1,10 +1,14 @@
 from flask import Flask, request, jsonify
 import json
+
+#import flask_mysqldb
 from flask_mysqldb import MySQL
 from flask_cors import CORS
 import os
 import uuid
 from werkzeug.utils import secure_filename
+
+#import firebase
 import pyrebase
 
 #local uploads or temp
@@ -24,7 +28,7 @@ app.config["MYSQL_PASSWORD"] = "12345"
 app.config["MYSQL_DB"] = "flaskpoststuto"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 mysql = MySQL(app)
-CORS(app)
+cors = CORS(app)
 
 #firebase config
 config = {
@@ -35,7 +39,7 @@ config = {
     "messagingSenderId": "507753716588",
     "appId": "1:507753716588:web:be9b7950fac20c578bf149",
     "measurementId": "G-QBLZ2J4T80",
-    "serviceAccount": "./keyfile1.json"    
+    "serviceAccount": "./keyfile.json"    
 }
 
 #init firebase app
@@ -48,6 +52,10 @@ storage = firebase.storage()
 def index():
     if request.method == "GET":
         return jsonify(data="posts main response")
+
+
+
+
 
 
 if __name__ == "__main__":
