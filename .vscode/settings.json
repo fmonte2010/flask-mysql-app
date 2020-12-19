@@ -1,0 +1,7 @@
+{
+    "python.linting.banditEnabled": false,
+    "python.pythonPath": "/Users/familiamontenegro/.local/share/virtualenvs/flask-mysql-app-ZOKMFNas/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true
+}

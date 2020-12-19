@@ -4,12 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+flask-mysqldb = "*"
 flask = "*"
 flask-cors = "*"
-flask-mysqldb = "*"
-pyrebase4 = "*"
+pyrebase = "*"
+update = "*"
 
 [dev-packages]
+bandit = "*"
+pylint = "<2.0.0"
 
 [requires]
 python_version = "3.8"

@@ -13,4 +13,4 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   declarations: [AddpostComponent]
 })
-export class AppModule { }
+export class AddpostModule { }
